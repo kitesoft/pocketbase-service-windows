@@ -1,0 +1,10 @@
+<service>
+  <id>pocketbase-service</id>
+  <name>Pocketbase Service</name>
+  <description>This service runs pocketbase as a windows service</description>
+  <executable>%BASE%\pocketbase</executable>
+  <arguments>serve</arguments>
+  <startmode>Automatic</startmode>
+  <onfailure action="restart" delay="5 sec"/>
+  <delayedAutoStart/>
+</service>
